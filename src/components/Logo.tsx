@@ -13,7 +13,7 @@ export function Logo({ className }: LogoProps) {
         viewBox="0 0 32 24"
         fill="none"
         aria-hidden="true"
-        className="h-5 w-auto shrink-0 text-brand-400"
+        className="h-6 w-auto shrink-0 text-brand-400"
       >
         <path
           d="M3 13.5 15 4.5l12 9"
@@ -31,7 +31,7 @@ export function Logo({ className }: LogoProps) {
           opacity="0.55"
         />
       </svg>
-      <span className="text-sm font-bold tracking-[0.14em] whitespace-nowrap">
+      <span className="text-lg font-bold tracking-[0.14em] whitespace-nowrap">
         NEXIOS <span className="text-brand-400">IMOB</span>
       </span>
     </div>
