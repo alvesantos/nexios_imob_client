@@ -1,1 +1,45 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+/* O tema escuro é controlado por uma classe no <html>, e não só por media query,
+   para que a escolha explícita do usuário vença a preferência do sistema. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Verde-lima da marca */
+  --color-brand-50: #f7fee7;
+  --color-brand-100: #ecfcca;
+  --color-brand-200: #d8f999;
+  --color-brand-300: #bbf451;
+  --color-brand-400: #9ee62b;
+  --color-brand-500: #83cd15;
+  --color-brand-600: #64a30d;
+  --color-brand-700: #4d7c0f;
+  --color-brand-800: #3f6212;
+  --color-brand-900: #35530e;
+  --color-brand-950: #192e03;
+
+  /* Quase-pretos do painel de marketing e do modo escuro */
+  --color-ink-50: #f6f7f6;
+  --color-ink-100: #e3e6e3;
+  --color-ink-200: #c7cdc7;
+  --color-ink-300: #a1aba1;
+  --color-ink-400: #7a857a;
+  --color-ink-500: #5d685d;
+  --color-ink-600: #495349;
+  --color-ink-700: #3c433c;
+  --color-ink-800: #242924;
+  --color-ink-900: #141814;
+  --color-ink-950: #0a0f0a;
+}
+
+html {
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+body {
+  @apply antialiased;
+}
