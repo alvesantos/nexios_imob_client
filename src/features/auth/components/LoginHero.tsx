@@ -20,7 +20,7 @@ export function LoginHero() {
           CRM imobiliário com inteligência artificial.
         </h1>
         <p className="mt-5 text-sm leading-relaxed text-ink-300">
-          Centralize clientes, imóveis e negociações num só lugar — com match automático entre
+          Centralize clientes, imóveis e negociações num só lugar, com match automático entre
           perfil e portfólio.
         </p>
       </div>

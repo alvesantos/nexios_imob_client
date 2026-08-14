@@ -11,7 +11,9 @@ export function ThemeToggle({ className }: { className?: string }) {
       aria-label={isDark ? 'Mudar para tema claro' : 'Mudar para tema escuro'}
       onClick={alternar}
       className={[
-        'relative inline-flex h-7 w-13 items-center rounded-full p-1 transition-colors',
+        // Sem `relative` aqui: o Tailwind emite `.relative` depois de `.absolute`,
+        // então ele venceria por ordem o posicionamento vindo por `className`.
+        'inline-flex h-7 w-13 items-center rounded-full p-1 transition-colors',
         'focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-400/60',
         isDark ? 'bg-brand-400' : 'bg-ink-200 dark:bg-ink-700',
         className ?? '',
